@@ -17,4 +17,7 @@ module.exports = {
   // 目录导航的最大层级
   markdown,
   plugins,
+  configureWebpack: (config) => {
+    config.output.hashFunction = 'sha256'
+  }
 }
